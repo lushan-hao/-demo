@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>welcome</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit" />
+
+    <!-- No Baidu Siteapp -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png" />
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/i/app-icon72x72@2x.png"
+    />
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta
+      name="msapplication-TileImage"
+      content="assets/i/app-icon72x72@2x.png"
+    />
+    <meta name="msapplication-TileColor" content="#0e90d2" />
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" type="text/css" href="./css/iconfont.css" />
   </head>
@@ -20,24 +50,166 @@
     <div id="introduce">
       <div class="introduce-middle">
         <div class="introduce-middle-left">
-            <div class="div1">我想你还不认识我</div>
-            <span>js</span>
-            <span>html</span>
-            <span>css</span>
-            <div>Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt
-                 ut labore et dolore magna aliqua. 
-                 Ut enim ad minim veniam, quis nostrud 
-                 exercitation ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat. Duis aute irure dolor
-                   in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur.</div>
+          <div class="div1">我想你还不认识我</div>
+          <button type="button" class="am-btn am-btn-secondary">次色按钮</button>
+          <button type="button" class="am-btn am-btn-secondary">次色按钮</button>
+          <button type="button" class="am-btn am-btn-secondary">次色按钮</button>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </div>
         </div>
         <div class="introduce-middle-right">
-            <img src="./img/introduce.jpg" alt="">
+          <img src="./img/introduce.jpg" alt="" />
         </div>
       </div>
     </div>
+    <div
+      id="lunbo"
+      data-am-widget="slider"
+      class="am-slider am-slider-c3"
+      data-am-slider="{&quot;controlNav&quot;:false}"
+    >
+      <ul class="am-slides">
+        <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+          <div class="am-slider-desc">
+            <div class="am-slider-counter">
+              <span class="am-active">1</span>/4
+            </div>
+            远方 有一个地方 那里种有我们的梦想
+          </div>
+        </li>
+        <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+          <div class="am-slider-desc">
+            <div class="am-slider-counter">
+              <span class="am-active">2</span>/4
+            </div>
+            某天 也许会相遇 相遇在这个好地方
+          </div>
+        </li>
+        <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
+          <div class="am-slider-desc">
+            <div class="am-slider-counter">
+              <span class="am-active">3</span>/4
+            </div>
+            不要太担心 只因为我相信 终会走过这条遥远的道路
+          </div>
+        </li>
+        <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
+          <div class="am-slider-desc">
+            <div class="am-slider-counter">
+              <span class="am-active">4</span>/4
+            </div>
+            OH PARA PARADISE 是否那么重要 你是否那么地遥远
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="know">
+        <h2>What I Know</h2>
+        <div class="clearfix know-content">
+          <div class="know-div">
+            <img src="./img/know.jpg" alt="">
+            <span>aa</span>
+            <h3>个人网站</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+          </div>
+          <div class="know-div1">
+            <img src="./img/know.jpg" alt="">
+            <span>aa</span>
+            <h3>个人网站</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+          </div>
+          <div class="know-div2">
+            <img src="./img/know.jpg" alt="">
+            <span>aa</span>
+            <h3>个人网站</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+          </div>
+        </div>
+    </div>
+    <div id="demo">
+      <h2>demo</h2>
+      <ul class="demo-content">
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+        <li>
+          <a href="html/1.html">
+            <img src="./img/demo1.jpg" alt="">
+            <h4>贪吃蛇</h4>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <div id="bottom">
+      <div class="bottom-content">
+          <div class="bottom-title">努力学习</div>
+          <div class="bottom-font">学习是一个充实愉悦的过程</div>
+          <div class="bottom-font">学习是一个充实愉悦的过程</div>
+          <div class="bottom-font">学习是一个充实愉悦的过程</div>
+          <div class="bottom-font">学习是一个充实愉悦的过程</div>
+          <div class="bottom-i">
+
+          </div>
+      </div>
+    </div>
+
+
   </body>
+  <script type="text/x-handlebars-template" id="amz-tpl">
+    {{>slider slider}}</script>
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/amazeui.js"></script>
+  <script src="assets/js/handlebars.min.js"></script>
+  <script src="assets/js/amazeui.widgets.helper.js"></script>
+  <script src="./js/amaze.js"></script>
 </html>
