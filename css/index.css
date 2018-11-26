@@ -97,7 +97,6 @@ body{
 }
 
 
-
 #know{
     padding-top: 120px;
     position: relative;
@@ -224,8 +223,8 @@ body{
     width: 100%;
     position: fixed;
     height: 102px;
-    background-color: #184caf;
-    z-index: 999;
+    background-color: #2761c4;
+    z-index: 3;
 }
 
 
@@ -276,7 +275,7 @@ body{
     right: 0px;
     border-radius: 50% 50%;
     background-color: #fff;
-    z-index: 3;
+    z-index: 10;
     opacity: 0;
     top: 10px;
     /* display: none; */
