@@ -47,19 +47,26 @@ body{
 }
 #introduce .introduce-middle{
     /* background-color: #f00; */
-    width: 1160px;
+    width: 100%;
     height: 520px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -580px;
-    margin-top: -260px;
+   transform: translateX(-50%) translateY(-50%);
 }
 #introduce .introduce-middle .introduce-middle-left{
-    width: 620px;
+    width: 50%;
+    margin-left: 5%;
     margin-top: 70px;
     /*background: #fff;*/
     height: 450px;
+}
+#introduce .introduce-middle .introduce-middle-left #introduce-text{
+    padding-top: 50px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+
 }
 #introduce .introduce-middle .introduce-middle-left .div1{   
     height: 90px;
@@ -79,21 +86,25 @@ body{
 }
 /* 90 30 120 120 */
 #introduce .introduce-middle .introduce-middle-right{
-    width: 500px;
+    width: 35%;
     position: absolute;
     top: 70px;
-    right: 0px;
-    opacity: .6;
+    right: 7%;
+    opacity: .7;
 }
 #introduce .introduce-middle .introduce-middle-right img{
-    width: 500px;
+    width: 100%;
     height: 450px;
+    border-radius: 10% 10%;
 }
 
 
 #lunbo{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    height: 80%;
+}
+#lunbo img{
+    height: 80%;
 }
 
 
@@ -107,10 +118,14 @@ body{
 }
 
 #know h2{
-    height: 40px;
+    height: 30px;
     width: 100%;
     font-size: 35px;
     text-align: center;
+    transform: translateY(-20px);
+}
+#know h2 p{
+    text-align: left;
 }
 .clearfix::after{
     content: '';
@@ -119,35 +134,51 @@ body{
 }
 
 #know .know-content{
-    width: 1160px;
+    width: 80%;
     height: 440px;
-    margin: 0 auto;
+    margin: 0 10%;
     display: flex;
     text-align: center;
 }
 #know .know-content .know-div{
-    float: left;
-    margin-right: 70px;
-}
-#know .know-content .know-div,#know .know-content .know-div1,#know .know-content .know-div2{
     height: 440px;
-    width: 340px;
+    width: 30%;
     position: relative;
-
+    float: left;
+}
+#know .know-content .know-div1{
+    height: 440px;
+    position: relative;
+    /* flex-grow: 1; */
+    width: 30%;
+    margin: 0 5%;
 }
 #know .know-content .know-div2{
+    height: 440px;
+    width: 30%;
+    position: relative;
     float: right;
-    margin-left: 70px;
 }
-#know .know-content span{
-    background-color: #00f;
+#know .know-content i{
     position: absolute;
-    top: 125px;
+    top: 50%;
     left: 50%;
-    margin-right: -170px;
+    margin-left: -20px;
+    margin-top: -40%;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    opacity: 0;
+    transition: 1s all ease;
+    border-radius: 50% 50%；
+}
+#know .know-content i:hover{
+    opacity: 1;
 }
 #know div img{
-    width: 340px;
+    /* width: 340px; */
     height: 250px;
 }
 
@@ -162,20 +193,24 @@ body{
     text-align: center;
 }
 #demo .demo-content{
-    width: 1160px;
+    width: 80%;
     height: 440px;
     margin: 0 auto;
     padding: 0;
 }
 
 #demo .demo-content li{
-    width: 250px;
+    width:23%;
     float: left;
     height: 220px;
-    margin:0 20px;
+    margin:0 5%;
+}
+#demo .demo-content li h4{
+    transform:  translateY(-15px);
+    color: #000;
 }
 #demo .demo-content li img{
-    width: 200px;
+    width: 100%;
 }
 
 #bottom{
@@ -183,20 +218,20 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("./../img/4.jpg");
-    background-size: 100% 100%;
+    /* background-image: url("./../img/4.jpg"); */
+    background-size: cover;
 }
 #bottom .bottom-content{
     width: 400px;
     height: 400px;
-    border: 5px solid;
+    border: 5px solid #ccc;
     margin: 50px auto 0;
     position: relative;
 }
 #bottom .bottom-title{
     width: 100px;
-    color: #fff;
-    height: 250px;
+    color: #ffd200;
+    height: 280px;
     line-height: 100px;
     text-align: center;
     writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
@@ -206,7 +241,7 @@ body{
     top: 25px;
     left: 25px;
     float: left;
-    background-color: #00f;
+    /* background-color: #00f; */
 }
 #bottom .bottom-font{
     float: left;
@@ -215,6 +250,59 @@ body{
     writing-mode: tb-lr;
     margin-left: 20px;
     margin-top: 40px;
+}
+#bottom  .bottom-content ul{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+#bottom li{
+    position: relative;
+}
+#bottom li i{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 60px;
+    color: #000;
+    font-size: 34px;
+}
+#bottom li .bottom-i-div{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    background-color: #2761c4;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0; 
+}
+#bottom li i::after{
+    content: '';
+    border-width: 8px;
+    border: #2761c4;
+    border-style: solid;
+    position: absolute;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    bottom: 10px;
+    left: 12px;
+    z-index: 999;
+    opacity: 0;
+}
+#bottom li i:hover{
+    color: #2761c4;
+}
+#bottom li i:hover::after{
+    opacity: 1;
+}
+#bottom li:hover .bottom-i-div{
+    opacity: 1;
+}
+#bottom li img{
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -230,7 +318,7 @@ body{
 
 
 #mine{
-    width: 80px;
+    width: 60px;
     height: 60px;
     position: fixed;
     top: 30px;
@@ -238,6 +326,10 @@ body{
     background-color: #1d54b8;
     z-index: 999;
     border-radius: 50% 50%;
+    -moz-box-shadow: 0px 1px 1px #94caee;
+    -webkit-box-shadow:0px 1px 1px #94caee;
+    box-shadow:  0px 1px 1px #94caee;
+    cursor: pointer;
 
 }
 #mine img{
@@ -276,10 +368,10 @@ body{
     border-radius: 50% 50%;
     background-color: #fff;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     top: 10px;
     /* display: none; */
-    transform: translateX(600px); 
+    transform: translateX(600px);   
 }
 #side .side-border{
     position: absolute;
@@ -306,6 +398,9 @@ body{
     top: -25px;
     z-index: 3;
     right: 175px;
+}
+#side  i{
+    color: #fff;
 }
 #side .side-border .li2{
     position: absolute;
