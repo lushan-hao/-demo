@@ -39,46 +39,74 @@
     <link rel="stylesheet" type="text/css" href="./css/iconfont.css" />
   </head>
   <body>
-    <div id="header">
-      <div id="mine" id="music"><img src="./img/logo.jpg" alt=""/></div>
+
     <div id="menu"><i class="iconfont icon-daohang"></i></div>
-    </div>
     
+
+
     <div id="side">
       <div class="side-border">
         <ul>
-          <a href="#homepage">
-            <li class="li1"><i class="iconfont icon-buoumaotubiao05"></i></li></a>
-        <a href="#introduce">
-          <li class="li2"><i class="iconfont icon-jieshao"></i></li>
-        </a>
-        <a href="#lunbo">
-          <li class="li3"><i class="iconfont icon-lunbo"></i></li>
-        </a>
-        <a href="">
-          <li class="li0">0</li>
-        </a>
-        <a href="#know">
-          <li class="li4"><i class="iconfont icon-xiangmu"></i></li>
-        </a>
-        <a href="#demo">
-          <li class="li5"><i class="iconfont icon-wodemoban"></i></li>
-        </a>
-        <a href="#bottom">
-          <li class="li6"><i class="iconfont icon-lianxi-A"></i></li>
-        </a>
+          <!-- <a href="#homepage"> -->
+            <li class="li1" id="page1"><i class="iconfont icon-buoumaotubiao05"></i></li>
+          <!-- </a> -->
+        <!-- <a href="#introduce"> -->
+          <li class="li2" id="page2"><i class="iconfont icon-jieshao"></i></li>
+        <!-- </a> -->
+        <!-- <a href="#lunbo"> -->
+          <li class="li3" id="page3"><i class="iconfont icon-lunbo"></i></li>
+        <!-- </a>
+        <a href=""> -->
+            <li id="mine" id="music"><img src="./img/logo.jpg" alt=""/></li>
+        <!-- </a>
+        <a href="#know"> -->
+          <li class="li4" id="page4"><i class="iconfont icon-xiangmu"></i></li>
+        <!-- </a>
+        <a href="#demo"> -->
+          <li class="li5" id="page5"><i class="iconfont icon-wodemoban"></i></li>
+        <!-- </a>
+        <a href="#bottom"> -->
+          <li class="li6" id="page6"><i class="iconfont icon-lianxi-A"></i></li>
+        <!-- </a> -->
       </ul>
       </div>
       <div class="side-close" id="close">
         <div>x</div>
+        </div>
     </div>
-    </div>
-    <div id="homepage">
+
+
+
+
+    <div id="homepage">  
+          <!-- <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'  id="a">
+              <ul class="am-slides">
+                  <li>
+                      <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+                     
+                  </li>
+                  <li>
+                      <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+                     
+                  </li>
+                  <li>
+                      <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+                     
+                  </li>
+                  <li>
+                      <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+                     
+                  </li>
+              </ul>
+            </div>           -->
       <div class="homepage-middle">
         <h3>Hello World</h3>
         <div id="home-middle"></div>
       </div>
     </div>
+
+
+
     <div id="introduce">
       <div class="introduce-middle">
         <div class="introduce-middle-left">
@@ -94,7 +122,10 @@
         </div>
       </div>
     </div>
-    <div id="lunbo"
+
+
+
+    <!-- <div id="lunbo"
       data-am-widget="slider"
       class="am-slider am-slider-c3"
       data-am-slider="{&quot;controlNav&quot;:false}"
@@ -137,7 +168,21 @@
           </div>
         </li>
       </ul>
+    </div> -->
+    
+    
+    
+    
+    <div class="wrapper" id="wrap">
+        <img src="./img/1.jpg" alt="">
+        <img src="./img/2.jpg" alt="">
+        <img src="./img/3.jpg" alt="">
+        <img src="./img/4.jpg" alt="">
+        <img src="./img/5.jpg" alt="">
     </div>
+
+
+
     <div id="know">
         <h2>我的项目</h2>
         <div class="clearfix know-content">
@@ -162,6 +207,9 @@
           </div>
       </div>
     </div>
+
+
+
     <div id="demo">
       <h2>demo</h2>
       <ul class="demo-content">
@@ -204,6 +252,10 @@
 
       </ul>
     </div>
+
+
+
+
     <div id="bottom">
       <div class="bottom-content">
           <div class="bottom-title">进步 努力 灵感</div>
@@ -233,6 +285,10 @@
           </div>
       </div>
     </div>
+
+
+
+    
     <!-- <embed src="./music.mp3" hidden="true"/> -->
     <audio id="audio" src="./music.mp3" loop="true" autoplay type="audio/mp3"></audio>
     <!-- <audio id="audioplayer" preload="auto" controls="controls" autoplay style="width: 100%;">
@@ -246,6 +302,7 @@
   <script src="assets/js/amazeui.js"></script>
   <script src="assets/js/handlebars.min.js"></script>
   <script src="assets/js/amazeui.widgets.helper.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/amaze.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/pulley.js"></script>

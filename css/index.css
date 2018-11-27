@@ -10,6 +10,15 @@ html{
 body{
     height: 100%;
 }
+#homepage #home-middle{
+    position: relative;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    /* background-color: #ccc; */
+    text-align: center;
+    z-index: 999;
+}
 #homepage{
     position: relative;
     width: 100%;
@@ -19,13 +28,15 @@ body{
 }
 #homepage .homepage-middle{
     width: 600px;
-    height: 200px;
-    background-color: #f00;
+    height: 250px;
+    background-color: #ccc;
+    opacity: .5;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -300px;
     margin-top: -100px;
+    border-radius: 20px 20px;
 } 
 #homepage .homepage-middle h3{
     display: inline-block;
@@ -42,8 +53,9 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("./../img/2.jpg");
+    /* background-image: url("./../img/2.jpg"); */
     background-size: 100% 100%;
+    background-color: #f8fcfd;
 }
 #introduce .introduce-middle{
     /* background-color: #f00; */
@@ -57,7 +69,7 @@ body{
 #introduce .introduce-middle .introduce-middle-left{
     width: 50%;
     margin-left: 5%;
-    margin-top: 70px;
+    margin-top: 40px;
     /*background: #fff;*/
     height: 450px;
 }
@@ -88,7 +100,7 @@ body{
 #introduce .introduce-middle .introduce-middle-right{
     width: 35%;
     position: absolute;
-    top: 70px;
+    top: 40px;
     right: 7%;
     opacity: .7;
 }
@@ -97,6 +109,42 @@ body{
     height: 450px;
     border-radius: 10% 10%;
 }
+
+
+#wrap{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    /* border:1px solid black; */
+    height:200px;
+    background-color: #ccc;
+}
+.wrapper img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 #lunbo{
@@ -108,13 +156,14 @@ body{
 }
 
 
+
 #know{
     padding-top: 120px;
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("./../img/3.jpg");
-    background-size: 100% 100%;
+    /* background-image: url("./../img/3.jpg"); */
+    /* background-size: 100% 100%; */
 }
 
 #know h2{
@@ -172,7 +221,8 @@ body{
     font-size: 40px;
     opacity: 0;
     transition: 1s all ease;
-    border-radius: 50% 50%；
+    border-radius: 50% 50%;
+    z-index: -1;
 }
 #know .know-content i:hover{
     opacity: 1;
@@ -180,6 +230,13 @@ body{
 #know div img{
     /* width: 340px; */
     height: 250px;
+    transition: all 1s ease;
+}
+#know div img:hover{
+    transform: translatex(20px) translateY(-20px);
+    -moz-box-shadow: -20px 20px 20px  #94caee;
+    -webkit-box-shadow:-20px 20px 20px  #94caee;
+    box-shadow:  -20px 20px 20px  #94caee;
 }
 
 
@@ -188,8 +245,8 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("./../img/5.jpg");
-    background-size: 100% 100%;
+    /* background-image: url("./../img/7.jpg"); */
+    /* background-size: cover; */
     text-align: center;
 }
 #demo .demo-content{
@@ -214,12 +271,13 @@ body{
 }
 
 #bottom{
-    padding-top: 120px;
+    padding-top: 60px;
     position: relative;
     width: 100%;
     height: 100%;
-    /* background-image: url("./../img/4.jpg"); */
+    /* background-image: url("./../img/7.jpg"); */
     background-size: cover;
+    /* transform: rotate(180deg) translateX(-40px); */
 }
 #bottom .bottom-content{
     width: 400px;
@@ -227,6 +285,7 @@ body{
     border: 5px solid #ccc;
     margin: 50px auto 0;
     position: relative;
+    /* transform: rotate(180deg); */
 }
 #bottom .bottom-title{
     width: 100px;
@@ -316,22 +375,6 @@ body{
 }
 
 
-
-#mine{
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 30px;
-    left: 100px;
-    background-color: #1d54b8;
-    z-index: 999;
-    border-radius: 50% 50%;
-    -moz-box-shadow: 0px 1px 1px #94caee;
-    -webkit-box-shadow:0px 1px 1px #94caee;
-    box-shadow:  0px 1px 1px #94caee;
-    cursor: pointer;
-
-}
 #mine img{
     width: 100%;
     height: 100%;
@@ -413,11 +456,12 @@ body{
     right: 348px;
     top: 73px;
 }
-#side .side-border .li0{
+#side .side-border #mine{
     position: absolute;
     z-index: 3;
     right: 370px;
     top: 175px;
+    background: none;
 }
 #side .side-border .li4{
     position: absolute;

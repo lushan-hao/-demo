@@ -1,7 +1,42 @@
 var oMenu = document.getElementById('menu');
 var oClose = document.getElementById('close');
 var oSide = document.getElementById('side');
-var oHeader = document.getElementById('header');
+var oDemo
+var oPage1 = document.getElementById('page1');
+var oPage2 = document.getElementById('page2');
+var oPage3 = document.getElementById('page3');
+var oPage4 = document.getElementById('page4');
+var oPage5 = document.getElementById('page5');
+var oPage6 = document.getElementById('page6');
+var wHeight = document.getElementById("demo").offsetHeight;
+oPage1.addEventListener('click',function(){
+    gotopage(wHeight);
+},true);
+oPage2.addEventListener('click',function(){
+    gotopage(wHeight*2);
+},true);
+oPage3.addEventListener('click',function(){
+    gotopage(wHeight*3);
+},true);
+oPage4.addEventListener('click',function(){
+    gotopage(wHeight*4);
+},true);
+oPage5.addEventListener('click',function(){
+    gotopage(wHeight*5);
+},true);
+oPage6.addEventListener('click',function(){
+    gotopage(wHeight*6);
+},true);
+function goTo(a){
+    console.log(a, typeof a);
+}
+
+function gotopage(h){
+    // setInterval(goTo(h), 1000);
+    // timertiao = setInterval("goTo('" + h + "')", 1);
+    timer = setInterval('goTo("'+h+'")');
+}
+
 // var oLunbo = document.getElementById('lunbo');
 // var odemo = document.getElementById('demo');
 // window.onload = function(){
