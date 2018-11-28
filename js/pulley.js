@@ -1,8 +1,6 @@
 
-
-
 var ins = 0;
-var str ="Hello Everyone,欢迎来到我的个人网站，我叫郝禄山,网站做的不好，请见谅。";
+var str ="Hello Everyone 欢迎来到我的个人网站 我叫郝禄山";
 
   window.onload = function typing() {
   var mydiv = document.getElementById("home-middle");

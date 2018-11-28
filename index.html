@@ -5,34 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>welcome</title>
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit" />
-
-    <!-- No Baidu Siteapp -->
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-    <link rel="icon" type="image/png" href="assets/i/favicon.png" />
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png" />
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="assets/i/app-icon72x72@2x.png"
-    />
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta
-      name="msapplication-TileImage"
-      content="assets/i/app-icon72x72@2x.png"
-    />
-    <meta name="msapplication-TileColor" content="#0e90d2" />
-
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -46,29 +18,24 @@
 
     <div id="side">
       <div class="side-border">
-        <ul>
-          <!-- <a href="#homepage"> -->
+        <!-- <ul>
             <li class="li1" id="page1"><i class="iconfont icon-buoumaotubiao05"></i></li>
-          <!-- </a> -->
-        <!-- <a href="#introduce"> -->
           <li class="li2" id="page2"><i class="iconfont icon-jieshao"></i></li>
-        <!-- </a> -->
-        <!-- <a href="#lunbo"> -->
           <li class="li3" id="page3"><i class="iconfont icon-lunbo"></i></li>
-        <!-- </a>
-        <a href=""> -->
             <li id="mine" id="music"><img src="./img/logo.jpg" alt=""/></li>
-        <!-- </a>
-        <a href="#know"> -->
           <li class="li4" id="page4"><i class="iconfont icon-xiangmu"></i></li>
-        <!-- </a>
-        <a href="#demo"> -->
           <li class="li5" id="page5"><i class="iconfont icon-wodemoban"></i></li>
-        <!-- </a>
-        <a href="#bottom"> -->
           <li class="li6" id="page6"><i class="iconfont icon-lianxi-A"></i></li>
-        <!-- </a> -->
-      </ul>
+      </ul> -->
+      <ul>
+        <li class="li6" id="page1"><i class="iconfont icon-buoumaotubiao05"></i></li>
+      <li class="li5" id="page2"><i class="iconfont icon-jieshao"></i></li>
+      <li class="li4" id="page3"><i class="iconfont icon-lunbo"></i></li>
+        <li id="mine" id="music"><img src="./img/logo.jpg" alt=""/></li>
+      <li class="li3" id="page4"><i class="iconfont icon-xiangmu"></i></li>
+      <li class="li2" id="page5"><i class="iconfont icon-wodemoban"></i></li>
+      <li class="li1" id="page6"><i class="iconfont icon-lianxi-A"></i></li>
+  </ul>
       </div>
       <div class="side-close" id="close">
         <div>x</div>
@@ -76,29 +43,55 @@
     </div>
 
 
+    <!-- <audio src="./zui.mp3"style="position: fixed;z-index: 9999;"  autoplay="autoplay">
+      Your browser does not support the audio tag.
+  </audio> -->
+  <!-- <audio autoplay>
+    <source src="music.ogg" type="audio/ogg">
+
+    <source src="music.mp3" type="audio/mpeg">
+    你的浏览器不支持html5的audio标签
+    </audio> -->
+    <embed src="./music.ogg" hidden="true" autostart="true" />
+    <!-- <audio src="music.mp3" hidden="true" loop="true" autoplay></audio> -->
+
+
+
+
+
+
+
+
 
 
     <div id="homepage">  
-          <!-- <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'  id="a">
+          <!-- <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'  id="">
               <ul class="am-slides">
                   <li>
-                      <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+                      <img src="./img/1.jpg">
                      
                   </li>
                   <li>
-                      <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+                      <img src="./img/2.jpg">
                      
                   </li>
                   <li>
-                      <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+                      <img src="./img/3.jpg">
                      
                   </li>
                   <li>
-                      <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+                      <img src="./img/4.jpg">
                      
                   </li>
               </ul>
-            </div>           -->
+            </div>       -->
+            <div class="wrapper" id="wrap">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/2.jpg" alt="">
+              <img src="./img/3.jpg" alt="">
+              <img src="./img/4.jpg" alt="">
+              <img src="./img/5.jpg" alt="">
+          </div>
       <div class="homepage-middle">
         <h3>Hello World</h3>
         <div id="home-middle"></div>
@@ -110,67 +103,23 @@
     <div id="introduce">
       <div class="introduce-middle">
         <div class="introduce-middle-left">
-          <div class="div1">我想你还不认识我</div>
-          <button type="button" class="am-btn am-btn-secondary">乐观</button>
+          <div class="div1" >我想你还不认识我</div>
+          <div id="xuan">
+            <button type="button" class="am-btn am-btn-secondary">乐观</button>
           <button type="button" class="am-btn am-btn-secondary">向上</button>
           <button type="button" class="am-btn am-btn-secondary">开朗</button>
+          </div>
+          
           <div id="introduce-text">
           </div>
         </div>
-        <div class="introduce-middle-right">
+        <div class="introduce-middle-right" id="twoimg">
           <img src="./img/introduce.jpg" alt="" />
         </div>
       </div>
     </div>
 
 
-
-    <!-- <div id="lunbo"
-      data-am-widget="slider"
-      class="am-slider am-slider-c3"
-      data-am-slider="{&quot;controlNav&quot;:false}"
-    >
-      <ul class="am-slides">
-        <li>
-          <img src="./img/lunbo1.jpg" />
-          <div class="am-slider-desc">
-            <div class="am-slider-counter">
-              <span class="am-active">1</span>/4
-            </div>
-            远方 有一个地方 那里种有我们的梦想
-          </div>
-        </li>
-        <li>
-          <img src="./img/lunbo2.jpg" />
-          <div class="am-slider-desc">
-            <div class="am-slider-counter">
-              <span class="am-active">2</span>/4
-            </div>
-            某天 也许会相遇 相遇在这个好地方
-          </div>
-        </li>
-        <li>
-          <img src="./img/lunbo3.jpg" />
-          <div class="am-slider-desc">
-            <div class="am-slider-counter">
-              <span class="am-active">3</span>/4
-            </div>
-            不要太担心 只因为我相信 终会走过这条遥远的道路
-          </div>
-        </li>
-        <li>
-          <img src="./img/lunbo4.jpg" />
-          <div class="am-slider-desc">
-            <div class="am-slider-counter">
-              <span class="am-active">4</span>/4
-            </div>
-            OH PARA PARADISE 是否那么重要 你是否那么地遥远
-          </div>
-        </li>
-      </ul>
-    </div> -->
-    
-    
     
     
     <div class="wrapper" id="wrap">
@@ -179,6 +128,22 @@
         <img src="./img/3.jpg" alt="">
         <img src="./img/4.jpg" alt="">
         <img src="./img/5.jpg" alt="">
+        <!-- <div class="wrapper">
+          <div class="box">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+              <img src="./img/1.jpg" alt="">
+          </div>
+      </div> -->
     </div>
 
 
@@ -213,37 +178,37 @@
     <div id="demo">
       <h2>demo</h2>
       <ul class="demo-content">
-        <li>
+        <li id="demo1">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>仿天猫</h4>
           </a>
         </li>
-        <li>
+        <li id="demo2">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>旋转图片</h4>
           </a>
         </li>
-        <li>
+        <li id="demo3">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>移入特效</h4>
           </a>
         </li>
-        <li>
+        <li id="demo4">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>轮播图</h4>
           </a>
         </li>
-        <li>
+        <li id="demo5">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>贪吃蛇</h4>
           </a>
         </li>
-        <li>
+        <li id="demo6">
           <a href="html/1.html">
             <img src="./img/demo1.jpg" alt="">
             <h4>仿星巴克</h4>
@@ -265,39 +230,39 @@
           <div class="bottom-font">如果和您共事，不胜荣幸</div>
           <div class="bottom-i">
               <ul>
-                <li><i class="iconfont icon-github"></i>
-                <div class="bottom-i-div">
+                <li><i class="iconfont icon-github"><span class="bottom-i-div ico1">
                   GitHub
-                </div></li>
-                <li><i class="iconfont icon-weibiaoti-"></i>
-                  <div class="bottom-i-div">
+                </span></i>
+                </li>
+
+                <li><i class="iconfont icon-weibiaoti-"><span class="bottom-i-div ico2">
                       18846771136
-                    </div></li>
-                <li><i class="iconfont icon-youxiang-"></i>
-                  <div class="bottom-i-div">
+                    </span></i>
+                  </li>
+
+                <li><i class="iconfont icon-youxiang-"><span class="bottom-i-div ico3">
                       2587051793@qq.com
-                    </div></li>
-                <li><i class="iconfont icon-changyonglogo28"></i>
-                  <div class="bottom-i-div">
+                    </span></i>
+                  </li>
+
+                <li><i class="iconfont icon-changyonglogo28"><span class="bottom-i-div ico4">
                      <img src="./img/weixin.jpg" alt="">
-                    </div></li>
+                    </span></i>
+                  </li>
               </ul>
           </div>
       </div>
     </div>
 
 
+    <!-- <audio id="audio" src="./music.mp3" loop="true" autoplay type="audio/mp3"></audio> -->
 
-    
-    <!-- <embed src="./music.mp3" hidden="true"/> -->
-    <audio id="audio" src="./music.mp3" loop="true" autoplay type="audio/mp3"></audio>
-    <!-- <audio id="audioplayer" preload="auto" controls="controls" autoplay style="width: 100%;">
-        <source src="music.mp3" type="audio/mp3"> -->
-     <!-- </audio> -->
-     <!-- <embed src="music.mp3" hidden=" true" autoplay/> -->
+
+
+
   </body>
-  <script type="text/x-handlebars-template" id="amz-tpl">
-    {{>slider slider}}</script>
+  <!-- <script type="text/x-handlebars-template" id="amz-tpl">
+    {{>slider slider}}</script> -->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/amazeui.js"></script>
   <script src="assets/js/handlebars.min.js"></script>
