@@ -22,27 +22,6 @@ var oText = document.getElementById('introduce-text');
 var aDiv = oText.getElementsByTagName('div');
 var oOp= document.getElementsByClassName('op');
 
-//选项卡
-for(var a = 0 ; a < aLi.length; a++){
-    aLi[a].index = a;
-    aLi[a].onclick = function(){
-        for (let j = 0; j< aDiv.length; j++) {
-            aLi[j].className = '';
-            aDiv[j].className = '';
-        }
-        aDiv[this.index].className = 'introduce-text-i';
-    }
-}
-
-
-
-
-
-
-
-
-
-
 
 //滚动样式
 window.onscroll = function(){
@@ -90,8 +69,6 @@ window.onscroll = function(){
 //     }
 //     audioAutoPlay();
 // });
-
-
 
 
 
@@ -160,7 +137,17 @@ oClose.addEventListener('click',function(){
     
 })
 
-
+//选项卡
+for(var a = 0 ; a < aLi.length; a++){
+    aLi[a].index = a;
+    aLi[a].onclick = function(){
+        for (let j = 0; j< aDiv.length; j++) {
+            aLi[j].className = '';
+            aDiv[j].className = '';
+        }
+        aDiv[this.index].className = 'introduce-text-i';
+    }
+}
 
 
 

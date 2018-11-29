@@ -104,30 +104,6 @@ var str ="Hello Everyone 欢迎来到我的个人网站 我叫郝禄山";
 $('#wrap').slider({ curDisplay: 0, autoPlay: true, interval: 3000 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var minSize = 5; //最小字体
 var oDemo = document.getElementById("demo");
 var maxSize = 50; //最大字体
@@ -169,11 +145,3 @@ setInterval(function() {
       }
     );
 }, newOne);
-
-
-
-$('#music').on('touchstart',function(){ 
-    var audio = $('#audio')[0]; 
-    audio.pause(); 
-    audio.play(); 
-})
