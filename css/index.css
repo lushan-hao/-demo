@@ -86,13 +86,26 @@ body{
     /*background: #fff;*/
     height: 450px;
 }
+#introduce .introduce-middle .introduce-middle-left li{
+    margin-left: 10px;
+    float: left;
+}
 #introduce .introduce-middle .introduce-middle-left #introduce-text{
-    
+    /* background-color: #2761c4; */
     padding-top: 50px;
     font-size: 20px;
     color: #000;
     font-weight: 400;
 
+}
+#introduce .introduce-middle .introduce-middle-left #introduce-text div{
+    display: none;
+}
+#introduce .introduce-middle .introduce-middle-left #introduce-text .introduce-text-i{
+    margin-top: 20px;
+    display: block;
+    /* background-color: #ccc; */
+    text-align: center;
 }
 #introduce .introduce-middle .introduce-middle-left .div1{   
     height: 90px;
@@ -101,6 +114,10 @@ body{
     font-weight: 700;
     text-align: center;
     
+}
+#introduce .introduce-middle .introduce-middle-left .op{
+    opacity: 0;
+    transition: all 3s ease;
 }
 #introduce .introduce-middle .introduce-middle-left #xuan{
     transform: translateX(-200px);
