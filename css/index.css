@@ -288,6 +288,7 @@ body {
 #know div img {
   height: 250px;
   transition: all 1s ease;
+  width: 100%;
 }
 #know div img:hover {
   transform: translatex(20px) translateY(-20px);
@@ -336,6 +337,7 @@ body {
 #demo .demo-content li img {
   width: 100%;
   transition: all 1s ease;
+  height: 70%;
 }
 #demo .demo-content #demo1 {
   transform: translateX(-200px);
