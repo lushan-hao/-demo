@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    background: url(img/bg.jpg) no-repeat;
+    width: 100%;;
+    height: 660px;
+    background-size: 100% 100%;
+}
+
+.all .start img{
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 999;
+    display: block;
+}
+
+#play{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#play .noplay .noplay-one{
+    display: none;
+    cursor: pointer;
+}
+#play .noplay .noplay-second{
+    display: none;
+    cursor: pointer;
+}
+#play .score{   
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+#play .main{
+    position: absolute;
+    width: 39%;
+    height: 32%;
+    left: 30.5%;
+    top: 31%;
+    border: 1px solid #000;
+}
+.over{
+    background: #000;
+    width: 30%;
+    height: 35%;
+    margin: auto;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translatex(-50%) translateY(-50%);
+    z-index: 1;
+    display: none;
+}
+.over .none img{
+    width: 20px;;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+.over .look{ 
+    background: url(img/startP.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+}
+.over .get span{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+.food{
+    background-image: url('img/apple.png');
+    background-size: 100% 100%;
+}
+.head{
+    background-image: url('img/head.png');
+    background-size: 100% 100%;
+}
+.body{
+    background-image: url('img/body.png');
+    background-size: 100% 100%;
+}

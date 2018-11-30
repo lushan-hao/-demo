@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="all">
+      <div class="start">
+            <img src="img/startGame.png" alt="" id="startimg">
+    </div>
+    <div id="play">
+        <div class="noplay" id="startr">
+            <img src="img/pause.png" alt="" id="one" class="noplay-one">
+            <img src="img/start.png" alt="" id="second" class="noplay-second">
+        </div>
+        <div class="score">
+            <span>分数：</span>
+            <span id="score"></span>
+        </div>
+        <div class="main" id="main"></div>
+    </div>
+    <div class="over" id="over">
+        <div class="none" id="close">
+            <img src="img/closeBtn.png" alt="">
+        </div>
+        <div class="look"></div>
+        <div class="get">
+            <span id="fen"></span>
+        </div>
+        
+    </div>  
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
