@@ -595,7 +595,7 @@ body {
   position: absolute;
   z-index: 3;
   /* right: 275px; */
-  left: 257px;
+  left: 275px;
   bottom: 0;
 }
 #side .side-border .li6 {
@@ -629,4 +629,7 @@ body {
   cursor: pointer;
   border: 3px solid #94caee;
   border-radius: 50%;
+}
+#audio{
+  display: none;
 }
