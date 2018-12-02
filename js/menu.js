@@ -22,9 +22,18 @@ var oText = document.getElementById('introduce-text');
 var aDiv = oText.getElementsByTagName('div');
 var oOp= document.getElementsByClassName('op');
 
+// var audio = document.creatElement("audio");
+// audio.src="music.mp3";//路径
+// audio.play();
+// var oAudio = document.getElementById('oAudio');
+// oMenu.onclick = function(){
+//     oAudio.play();
+// }
+
 
 //滚动样式
-window.onscroll = function(){
+     
+    window.onscroll = function(){
     let loc = document.documentElement.scrollTop ||document.body.scrollTop;
     if(loc=wHeight){
             oTwoPage.style.opacity = '.7';
@@ -36,7 +45,7 @@ window.onscroll = function(){
             oOp[0].style.opacity = '1';
             oOp[1].style.opacity = '1';
     }
-    if(loc=11*wHeight/2){
+    if(loc=5*wHeight){
         oDemo1.style.opacity = '1';
         oDemo1.style.transform = 'translateX(0)';
         oDemo4.style.opacity = '1';
@@ -52,23 +61,10 @@ window.onscroll = function(){
     }
 
 
-    // function page2img(){
-    //     oTwoPage.style.opacity = '0';
-    //     oTwoPage.style.transform = 'translateX(37%)';
-    // }
 }
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     function audioAutoPlay() {
-//         var audio = document.getElementById('bg-music');
-//             // audio.play();
-//         document.addEventListener("WeixinJSBridgeReady", function () {
-//             audio.play();
-//         }, false);
-//     }
-//     audioAutoPlay();
-// });
+
 
 
 
@@ -113,16 +109,6 @@ function gotopage(h){
     timer = setInterval('goTo("'+h+'")',1);
 }
 
-// var oLunbo = document.getElementById('lunbo');
-// var odemo = document.getElementById('demo');
-// window.onload = function(){
-//     var lHeight = $(window).height();
-//     oLunbo.style.height = lHeight + 'px';
-//     odemo.style.height = lHeight + 'px';
-//     console.log(lHeight);
-//     console.log(oLunbo.style.height);
-//     console.log(odemo.style.height);
-// };
 oMenu.addEventListener('click',function(){
     oMenu.style.display = "none";
     oSide.style.transition = 'all 1s linear';
@@ -155,22 +141,24 @@ for(var a = 0 ; a < aLi.length; a++){
 
 // windowAddMouseWheel();
 // function windowAddMouseWheel() {
-//     var locc = document.documentElement.scrollTop ||document.body.scrollTop;
+//     // var locc = document.documentElement.scrollTop ||document.body.scrollTop;
 //     var scrollFunc = function (e) {
 //         e = e || window.event;
 //         if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
 //             if (e.wheelDelta > 0) { //当滑轮向上滚动时
-//                 window.scrollTo(0,locc-wHeight);
+//                 // window.scrollTo(0,locc-wHeight);
+//                 console.log(a);
 //             }
 //             if (e.wheelDelta < 0) { //当滑轮向下滚动时
 //                 window.scrollTo(0,locc+wHeight);
-//             }
+//             // }
 //         } else if (e.detail) {  //Firefox滑轮事件
 //             if (e.detail> 0) { //当滑轮向上滚动时
-//                 window.scrollTo(0,locc-wHeight);
+//                 console.log(a);
+//                 // window.scrollTo(0,locc-wHeight);
 //             }
 //             if (e.detail< 0) { //当滑轮向下滚动时
-//                 window.scrollTo(0,locc+wHeight);
+//                 // window.scrollTo(0,locc+wHeight);
 //             }
 //         }
 //     };
@@ -181,3 +169,26 @@ for(var a = 0 ; a < aLi.length; a++){
 // //滚动滑轮触发scrollFunc方法
 //     window.onmousewheel = document.onmousewheel = scrollFunc;
 // }
+// }
+
+// var oLunbo = document.getElementById('lunbo');
+// var odemo = document.getElementById('demo');
+// window.onload = function(){
+//     var lHeight = $(window).height();
+//     oLunbo.style.height = lHeight + 'px';
+//     odemo.style.height = lHeight + 'px';
+//     console.log(lHeight);
+//     console.log(oLunbo.style.height);
+//     console.log(odemo.style.height);
+// };
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     function audioAutoPlay() {
+//         var audio = document.getElementById('bg-music');
+//             // audio.play();
+//         document.addEventListener("WeixinJSBridgeReady", function () {
+//             audio.play();
+//         }, false);
+//     }
+//     audioAutoPlay();
+// });
