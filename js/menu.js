@@ -17,7 +17,7 @@ var oDemo4 = document.getElementById('demo4');
 var oDemo5 = document.getElementById('demo5');
 var oDemo6 = document.getElementById('demo6');
 var oXuan= document.getElementById('xuan');
-var aLi = oXuan.getElementsByTagName('li');
+var aLi = oXuan.getElementsByTagName('button');
 var oText = document.getElementById('introduce-text');
 var aDiv = oText.getElementsByTagName('div');
 var oOp= document.getElementsByClassName('op');
@@ -35,6 +35,7 @@ var oOp= document.getElementsByClassName('op');
      
     window.onscroll = function(){
     let loc = document.documentElement.scrollTop ||document.body.scrollTop;
+    this.console.log(wHeight);
     if(loc=wHeight){
             oTwoPage.style.opacity = '.7';
             oTwoPage.style.transform = 'translateX(-27%)';
@@ -131,6 +132,7 @@ for(var a = 0 ; a < aLi.length; a++){
             aLi[j].className = '';
             aDiv[j].className = '';
         }
+        this.className += 'sele';
         aDiv[this.index].className = 'introduce-text-i';
     }
 }

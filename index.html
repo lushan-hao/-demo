@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>welcome</title>
-    <!-- <link rel="stylesheet" href="assets/css/amazeui.min.css" /> -->
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" type="text/css" href="./css/iconfont.css" />
   </head>
@@ -41,15 +40,6 @@
         </div>
     </div>
 
-<!-- 
-  <audio autoplay>
-    <source src="music.ogg" type="audio/ogg">
-
-    <source src="music.mp3" type="audio/mpeg">
-    你的浏览器不支持html5的audio标签
-    </audio> -->
-    <audio autoplay="autoplay" loop="loop" src="music.mp3"  id="audio"></audio>
-
 
     <div id="homepage">  
             <div class="wrapper" id="wrap">
@@ -72,10 +62,10 @@
         <div class="introduce-middle-left">
           <div  class="div1 op" >我想你还不认识我</div>
           <div id="xuan">
-            <li><button type="button" class="am-btn am-btn-secondary">javaScript</button></li>
-            <li> <button type="button" class="am-btn am-btn-secondary">Vue</button></li>
-            <li><button  type="button" class="am-btn am-btn-secondary">持之以恒</button></li>
-            
+            <li><button class="sele">javaScript</button></li>
+            <li> <button>Vue</button></li>
+            <li><button>持之以恒</button></li>
+            .
           </div>
           
           <div id="introduce-text" class="op"> 
@@ -203,9 +193,11 @@
           <div class="bottom-font">如果和您共事，不胜荣幸</div>
           <div class="bottom-i">
               <ul>
-                <li><i class="iconfont icon-github"><span class="bottom-i-div ico1">
+                <li>
+                  <a href="https://github.com/haolushan5253">
+                  <i class="iconfont icon-github"><span class="bottom-i-div ico1">
                   GitHub
-                </span></i>
+                </span></i></a>
                 </li>
 
                 <li><i class="iconfont icon-weibiaoti-"><span class="bottom-i-div ico2">
@@ -218,7 +210,8 @@
                     </span></i>
                   </li>
 
-                <li><i class="iconfont icon-changyonglogo28"><span class="bottom-i-div ico4">
+                <li>
+                  <i class="iconfont icon-changyonglogo28"><span class="bottom-i-div ico4">
                      <img src="./img/weixin.jpg" alt="">
                     </span></i>
                   </li>
@@ -227,13 +220,23 @@
       </div>
     </div>
 
+
+
+
+
+
+    <!-- 
+  <!-- <audio autoplay>
+    <source src="music.ogg" type="audio/ogg">
+
+    <source src="music.mp3" type="audio/mpeg">
+    你的浏览器不支持html5的audio标签
+    </audio> --> 
+    <audio autoplay="autoplay" loop="loop" src="music.mp3"  id="audio"></audio>
+    <!-- <embed src="music.mp3" hidden="true" style="display: none" /> -->
+
   </body>
-  <script src="assets/js/jquery-1.12.4.min.js"></script>
-  <script src="assets/js/amazeui.js"></script>
-  <script src="assets/js/handlebars.min.js"></script>
-  <script src="assets/js/amazeui.widgets.helper.js"></script>
   <script src="./js/jquery.min.js"></script>
-  <script src="./js/amaze.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/pulley.js"></script>
   <script src="./js/lunbo.js"></script>
