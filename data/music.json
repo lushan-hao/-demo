@@ -1,0 +1,45 @@
+{
+		"songs": [{
+			"id": "553755659",
+			"title": "可不可以",
+			"author": "张紫豪",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=553755659&key=579621905",
+			"lrc": "lrc/可不可以.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=553755659&key=579621905"
+		}, {
+			"id": "486814412",
+			"title": "沙漠骆驼",
+			"author": "展展与罗罗",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=486814412&key=579621905",
+			"lrc": "lrc/沙漠骆驼.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=486814412&key=579621905"
+		}, {
+			"id": "574566207",
+			"title": "盗将行",
+			"author": "花粥/马雨阳",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=574566207&key=579621905",
+			"lrc": "lrc/盗将行.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=574566207&key=579621905"
+		}, {
+			"id": "1293886117",
+			"title": "年少有为",
+			"author": "李荣浩",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=1293886117&key=579621905",
+			"lrc": "lrc/年少有为.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=1293886117&key=579621905"
+		},  {
+			"id": "571338279",
+			"title": "往后余生",
+			"author": "王贰浪",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=571338279&key=579621905",
+			"lrc": "lrc/往后余生.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=571338279&key=579621905"
+		}, {
+			"id": "536099160",
+			"title": "不染",
+			"author": "毛不易",
+			"musicImgSrc": "https://api.bzqll.com/music/netease/pic?id=536099160&key=579621905",
+			"lrc": "lrc/不染.lrc",
+			"src": "https://api.bzqll.com/music/netease/url?id=536099160&key=579621905"
+		}]
+}
