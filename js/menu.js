@@ -21,6 +21,13 @@ var aLi = oXuan.getElementsByTagName('button');
 var oText = document.getElementById('introduce-text');
 var aDiv = oText.getElementsByTagName('div');
 var oOp= document.getElementsByClassName('op');
+// var oMine = document.getElementById('mine');
+// var aAudio = oMine.getElementsByTagName('audio');
+
+// oMine.addEventListener('click',function () {
+//     console.log(aAudio);
+//     audio.play();
+// },true)
 
 // var audio = document.creatElement("audio");
 // audio.src="music.mp3";//路径
