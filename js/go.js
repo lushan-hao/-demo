@@ -4,12 +4,6 @@ $(document).ready(function(){
 	var stepping = 0.03;
 	var list = $('#list');
 	var $list = $(list);
-	// $list.mousemove(function(e){
-	// 	var topOfList = $list.eq(0).offset().top
-	// 	var listHeight = $list.height()
-	// 	stepping = (e.clientY - topOfList) /  listHeight * 0.2 - 0.1;
-	// });
-	
 	for (var i = element.length - 1; i >= 0; i--){
 		element[i].elemAngle = i * Math.PI * 2 / element.length;
 	}
