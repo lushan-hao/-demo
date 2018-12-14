@@ -2,7 +2,9 @@
 var ins = 0;
 var str ="Hello Everyone 欢迎来到我的个人网站 我叫郝禄山";
 
-  window.onload = function typing() {
+typing();
+//   window.onload = 
+  function typing() {
   var mydiv = document.getElementById("home-middle");
   mydiv.innerHTML += str.charAt(ins);
   ins++;
