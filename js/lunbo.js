@@ -25,7 +25,6 @@ function renderTime() {
     //Background
     gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
     gradient.addColorStop(0, "#fff");
-    gradient.addColorStop(1, "#fff");
     ctx.fillStyle = gradient;
     //ctx.fillStyle = 'rgba(00 ,00 , 00, 1)';
     ctx.fillRect(0, 0, 500, 500);
@@ -44,11 +43,10 @@ function renderTime() {
     //Date
     ctx.font = "25px Helvetica";
     ctx.fillStyle = 'rgba(00, 00, 00, 1)'
-    ctx.fillText(today, 175, 250);
+    ctx.fillText(today, 165, 230);
     //Time
     ctx.font = "25px Helvetica Bold";
     ctx.fillStyle = 'rgba(00, 00, 00, 1)';
-    ctx.fillText(time + ":" + mil, 175, 280);
-
+    ctx.fillText(time + ":" + mil, 155, 280);
 }
 setInterval(renderTime, 40);
